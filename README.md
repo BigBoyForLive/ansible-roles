@@ -22,20 +22,20 @@ The configuration role will help us to install and configure apache2 web-server 
  2. change the `root-directory` of apache2  by setting up `apache_dir` variable 
  
  ### file structure: 
- ├── defaults 
-│   └── main.yml # all default variables
-├── files
-│   └── 000-default.conf 
-├── handlers
-│   └── main.yml 
-├── README.md
-├── tasks
-│   └── main.yml
-├── templates
-│   ├── 000-default.conf.j2
-│   └── ports.conf.j2
-└── vars
-    └── main.yml
+ ├── defaults \n
+│   └── main.yml # all default variables \n
+├── files \n 
+│   └── 000-default.conf \n
+├── handlers \n
+│   └── main.yml \n
+├── README.md \n
+├── tasks \n
+│   └── main.yml \n 
+├── templates \n 
+│   ├── 000-default.conf.j2 \n 
+│   └── ports.conf.j2 \n 
+└── vars \n 
+    └── main.yml \n
 ### Note : the role may detect and reload our webserver only when changes are made
 
 ## Deployment role 
