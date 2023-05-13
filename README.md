@@ -21,21 +21,21 @@ The configuration role will help us to install and configure apache2 web-server 
  1. change the `port` of apache web server  by setting up `apache_port` variable 
  2. change the `root-directory` of apache2  by setting up `apache_dir` variable 
  
- ### file structure: 
+ ### file structure:  \
  ├── defaults \
 │   └── main.yml # all default variables \
 ├── files \
-│   └── 000-default.conf \n
-├── handlers \n
-│   └── main.yml \n
-├── README.md \n
-├── tasks \n
+│   └── 000-default.conf \
+├── handlers \
+│   └── main.yml \
+├── README.md \
+├── tasks \
 │   └── main.yml \
 ├── templates \
 │   ├── 000-default.conf.j2 \
 │   └── ports.conf.j2 \
 └── vars \
-    └── main.yml \n
+    └── main.yml \
 ### Note : the role may detect and reload our webserver only when changes are made
 
 ## Deployment role 
@@ -43,23 +43,23 @@ The configuration role will help us to install and configure apache2 web-server 
 
 The Deployment role will help us to Only deploy our site to the Webserver using the website jinja2 template : 
  the `index.html` could provide informations such as the `hostname` , `home-directory` , sshuser and `server IP` by exploiting `ansible-facts`
-roles/deployment/
-├── defaults
-│   └── main.yml
-├── handlers
-│   └── main.yml
-├── meta
-│   └── main.yml
-├── README.md
-├── tasks
-│   └── main.yml
-├── templates
-│   ├── index.html.j2
-│   └── styles.css.j2
-├── tests
-│   ├── inventory
-│   └── test.yml
-└── vars
-    └── main.yml
+roles/deployment/ \
+├── defaults\
+│   └── main.yml \ 
+├── handlers \ 
+│   └── main.yml \ 
+├── meta \ 
+│   └── main.yml \
+├── README.md \ 
+├── tasks \ 
+│   └── main.yml \
+├── templates \ 
+│   ├── index.html.j2 \
+│   └── styles.css.j2 \
+├── tests \
+│   ├── inventory \
+│   └── test.yml \ 
+└── vars \
+    └── main.yml \
     
   The Dockerfile simplify provisionning of `ssh-server` by using `docker containers` and it uses the `marwaney/ssh-server` image
