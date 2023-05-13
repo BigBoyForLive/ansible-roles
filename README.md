@@ -43,8 +43,8 @@ The configuration role will help us to install and configure apache2 web-server 
 
 The Deployment role will help us to Only deploy our site to the Webserver using the website jinja2 template : 
  the `index.html` could provide informations such as the `hostname` , `home-directory` , sshuser and `server IP` by exploiting `ansible-facts`
-roles/deployment/ \
-├── defaults\
+ ### file structure:  \
+ ├── defaults\
 │   └── main.yml\ 
 ├── handlers\ 
 │   └── main.yml\ 
