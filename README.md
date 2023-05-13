@@ -45,21 +45,21 @@ The Deployment role will help us to Only deploy our site to the Webserver using 
  the `index.html` could provide informations such as the `hostname` , `home-directory` , sshuser and `server IP` by exploiting `ansible-facts`
 roles/deployment/ \
 ├── defaults\
-│   └── main.yml \ 
-├── handlers \ 
-│   └── main.yml \ 
-├── meta \ 
-│   └── main.yml \
-├── README.md \ 
-├── tasks \ 
-│   └── main.yml \
-├── templates \ 
-│   ├── index.html.j2 \
-│   └── styles.css.j2 \
-├── tests \
-│   ├── inventory \
-│   └── test.yml \ 
-└── vars \
-    └── main.yml \
+│   └── main.yml\ 
+├── handlers\ 
+│   └── main.yml\ 
+├── meta\ 
+│   └── main.yml\
+├── README.md\ 
+├── tasks\ 
+│   └── main.yml\
+├── templates\ 
+│   ├── index.html.j2\
+│   └── styles.css.j2\
+├── tests\
+│   ├── inventory\
+│   └── test.yml\ 
+└── vars\
+    └── main.yml
     
   The Dockerfile simplify provisionning of `ssh-server` by using `docker containers` and it uses the `marwaney/ssh-server` image
