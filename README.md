@@ -63,3 +63,11 @@ The Deployment role will help us to Only deploy our site to the Webserver using 
     └── main.yml
     
   The Dockerfile simplify provisionning of `ssh-server` by using `docker containers` and it uses the `marwaney/ssh-server` image
+
+
+suite de l'exercice :
+- suite sur le templating avec les `boucles for `
+- templating avec des condition `if else` 
+- adding ip-utils `iputils-ping` to deps
+- creating `/etc/hosts` file wich will contain the dns record of all servers by using `for loop` 
+- 

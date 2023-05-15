@@ -6,7 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ page_title }}</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        flex: 1;
+        flex-direction: column;
+        color : blue;
+      }
+      ul {
+        font-size: 22px; 
+      }
+    </style>
   </head>
+  
+  
   <body>
 	<h1> THOSE are the information about our server  </h1>
   <ul>
@@ -15,6 +30,5 @@
   <li>The home directory is  {{ ansible_distribution | lower  }}</li>
   <li>The host IP  is  {{ ansible_host | lower  }}</li>
 </ul>
-<h2>l'éditeur de ce jolie playbook s'appelle {{ editor }}</h2>
   </body>
 </html>
