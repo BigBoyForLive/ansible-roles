@@ -4,3 +4,11 @@
   become: true
   roles:
     - deployment
+  # tasks: 
+  #   - name: debug 
+  #     ansible.builtin.debug:
+  #       var: hostvars[groups.containeurs[0]].ansible_host
+
+  #   - name: getting the lenght 
+  #     ansible.builtin.debug:
+  #       var: groups.containeurs | length

@@ -5,35 +5,23 @@ services:
     build: .
     restart: always
     container_name: container1
-    x-develop: 
-      watch: 
-        - action: sync
     ports:
       - "3001:22"
   container-2:
     build: .
     restart: always
-    container_name: container2
-    x-develop: 
-      watch: 
-        - action: sync    
+    container_name: container2    
     ports:
       - "3002:22"
   container-3:
     build: .
     restart: always
-    container_name: container3
-    x-develop: 
-      watch: 
-        - action: sync    
+    container_name: container3    
     ports:
       - "3003:22"
   container-4:
     build: .
     restart: always
-    container_name: container4
-    x-develop: 
-      watch: 
-        - action: sync    
+    container_name: container4    
     ports:
       - "3004:22"

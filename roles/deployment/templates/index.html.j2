@@ -30,5 +30,15 @@
   <li>The home directory is  {{ ansible_distribution | lower  }}</li>
   <li>The host IP  is  {{ ansible_host | lower  }}</li>
 </ul>
+<ul>
+{% for index in range(groups.containeurs | length) %}
+    {% if hostvars[groups.containeurs[index]].ansible_host != ansible_host %}
+     <ul>
+      <li>{{ hostvars[groups.containeurs[index]].ansible_host }}</li>
+    </ul> 
+     {% endif %}
+{% endfor %}
+
+</ul>
   </body>
 </html>
